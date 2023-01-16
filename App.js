@@ -2,23 +2,16 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={viewStyles.container}>
+    <View style={styles.container}>
       <Text style={styles.texto}>Hello World!</Text>
       <Text>I don't wanna, talk about it</Text>
+      <Text style={styles.texto}>Test</Text>
     </View>
 
   );
 }
 
-const viewStyles = StyleSheet.create({
-  container:{
-    backgroundColor:'skyblue',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flex: 1
-    
-  }
-})
+
 
 const styles = StyleSheet.create({
   texto: {
@@ -27,5 +20,12 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     backgroundColor: 'lightgreen'
 
+  },
+  container:{
+    backgroundColor:'skyblue',
+    alignItems: 'center',// alinha os itens na horizontal
+    justifyContent: 'center',// alinha os itens na vertical
+    flex: 1
+    
   },
 });
